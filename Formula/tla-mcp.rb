@@ -1,7 +1,7 @@
 class TlaMcp < Formula
   desc "TLA+ model checker (tla) and MCP server (tla-mcp)"
   homepage "https://github.com/fabracht/tla-rs"
-  version "0.24.1"
+  version "0.24.2"
   license "MIT OR Apache-2.0"
 
   livecheck do
@@ -11,32 +11,32 @@ class TlaMcp < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/fabracht/tla-rs/releases/download/v0.24.1/tla-macos-arm64"
-      sha256 "5b370a41392f41f928bd4c0e0be76fab17f8609b7c13da193364d275a065f702"
+      url "https://github.com/fabracht/tla-rs/releases/download/v0.24.2/tla-macos-arm64"
+      sha256 "e361e5aaa4199d45ea8950bbbc990bfdadbb564de80252c58eaa77b0bad3ecb1"
 
       resource "tla-mcp-bin" do
-        url "https://github.com/fabracht/tla-rs/releases/download/v0.24.1/tla-mcp-macos-arm64"
-        sha256 "0152520f1fd231bdd7f611b395c6cc3c5755b9e0d71aa503194ed036554c47a7"
+        url "https://github.com/fabracht/tla-rs/releases/download/v0.24.2/tla-mcp-macos-arm64"
+        sha256 "459606fbe13b757d6c7d6e4940ff08430d80c2801351bbf85f8985569d7849e4"
       end
     end
     on_intel do
-      url "https://github.com/fabracht/tla-rs/releases/download/v0.24.1/tla-macos-amd64"
-      sha256 "7be337ef321be36f167dee7f263feec2afdb3bab99a53b6a141756f9f8f45516"
+      url "https://github.com/fabracht/tla-rs/releases/download/v0.24.2/tla-macos-amd64"
+      sha256 "349eb2161b17492d9299e4d0aa082525b969adf1a00ff63468ecffb0bed2e9e9"
 
       resource "tla-mcp-bin" do
-        url "https://github.com/fabracht/tla-rs/releases/download/v0.24.1/tla-mcp-macos-amd64"
-        sha256 "1d1cb85c9fd1fd5a38a42c879a4f78137e01bcaf8a31c0e43205fa26a5b03085"
+        url "https://github.com/fabracht/tla-rs/releases/download/v0.24.2/tla-mcp-macos-amd64"
+        sha256 "80c4de604982b33f8e1ad8fad17da802accc775d9e5895b84c244ce2e8a88ba4"
       end
     end
   end
 
   on_linux do
-    url "https://github.com/fabracht/tla-rs/releases/download/v0.24.1/tla-linux-amd64"
-    sha256 "c86461dd50b665a7a755176de51abd5024ea1d175b1b13c400d0b6692453e406"
+    url "https://github.com/fabracht/tla-rs/releases/download/v0.24.2/tla-linux-amd64"
+    sha256 "244674dce6dcb9639b19d810f3128c69684bea3a4068e22575520f5e3e968a24"
 
     resource "tla-mcp-bin" do
-      url "https://github.com/fabracht/tla-rs/releases/download/v0.24.1/tla-mcp-linux-amd64"
-      sha256 "fc30d04decfab1778f5122c79d172801770abc225533a061ac1a21df4e6e3a56"
+      url "https://github.com/fabracht/tla-rs/releases/download/v0.24.2/tla-mcp-linux-amd64"
+      sha256 "985f74ac797d143f7291d16f2c43f62b0c0d96b060e5ed1433d9282b24be771c"
     end
   end
 
